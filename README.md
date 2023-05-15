@@ -1,3 +1,7 @@
+# Project purpose
+
+This is a boilerplate project for university students.
+
 # StreamingService
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
