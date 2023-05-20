@@ -12,6 +12,16 @@ export interface PlaylistItemInterface {
         width: number;
         height: number;
       };
+      high: {
+        url: string;
+        width: number;
+        height: number;
+      };
+      medium: {
+        url: string;
+        width: number;
+        height: number;
+      };
     };
     channelTitle: string;
     videoOwnerChannelTitle: string;

@@ -1,17 +1,20 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   templateUrl: './video.component.html',
   styleUrls: ['./video.component.scss'],
 })
 export class VideoComponent implements OnInit {
-  @Input() videoId = 'dQw4w9WgXcQ';
+  videoId = 'dQw4w9WgXcQ';
   videoUrl = '';
 
-  constructor(private domSanitizer: DomSanitizer) {}
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.videoUrl = `https://www.youtube.com/embed/${this.videoId}`;
+    this.route.queryParams.subscribe((params) => {
+      this.videoId = params['id'];
+      this.videoUrl = `https://www.youtube.com/embed/${this.videoId}`;
+    });
   }
 }
