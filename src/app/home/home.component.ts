@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { Observable, map, tap } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { API_KEY } from '../API_KEY.const';
 import { PlaylistItemInterface } from '../interfaces/playlist-item.interface';
 import { PlaylistItemListResponseInterface } from '../interfaces/playlist-item-list-response.interface';

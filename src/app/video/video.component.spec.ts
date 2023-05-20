@@ -8,7 +8,7 @@ describe('VideoComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [VideoComponent]
+      declarations: [VideoComponent],
     });
     fixture = TestBed.createComponent(VideoComponent);
     component = fixture.componentInstance;

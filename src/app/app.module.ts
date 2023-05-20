@@ -10,7 +10,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { SafePipe } from './safe.pipe';
 
 @NgModule({
-  declarations: [AppComponent, VideoComponent, ListingComponent, HomeComponent, SafePipe],
+  declarations: [
+    AppComponent,
+    VideoComponent,
+    ListingComponent,
+    HomeComponent,
+    SafePipe,
+  ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

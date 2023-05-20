@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { API_KEY } from './API_KEY.const';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
