@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.listing-element {
+  border: 1px red solid;
+  min-height: 200px;
+  width: 200px;
+}
