@@ -1,6 +1,7 @@
 <div class="wrapper">
-  <div class="listing-element"></div>
-  <div class="listing-element"></div>
-  <div class="listing-element"></div>
-  <div class="listing-element"></div>
+  <ng-container *ngFor="let item of playlistItems">
+    <div class="listing-element">
+      <img [src]="item.snippet.thumbnails.default.url" />
+    </div>
+  </ng-container>
 </div>
