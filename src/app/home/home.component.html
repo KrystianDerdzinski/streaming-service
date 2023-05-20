@@ -1,3 +1,5 @@
 <h1>Home</h1>
 
-<app-listing [playlistItems]="(playlistItems | async).items"></app-listing>
+<ng-container *ngIf="playlistItems | async as playlistItems">
+  <app-listing [playlistItems]="playlistItems"></app-listing>
+</ng-container>

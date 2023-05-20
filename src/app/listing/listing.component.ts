@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { PlaylistItemInterface } from '../interfaces/playlist-item.interface';
 
 @Component({
   selector: 'app-listing',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./listing.component.scss'],
 })
 export class ListingComponent {
-  @Input() playlistItems: any[] = [];
+  @Input() playlistItems: PlaylistItemInterface[] = [];
 }
