@@ -8,4 +8,14 @@ import { PlaylistItemInterface } from '../interfaces/playlist-item.interface';
 })
 export class ListingComponent {
   @Input() playlistItems: PlaylistItemInterface[] = [];
+
+  addShadow($event: MouseEvent) {
+    const target: HTMLElement = $event.target as HTMLElement;
+    target.classList.add('card-hover');
+  }
+
+  removeShadow($event: MouseEvent) {
+    const target: HTMLElement = $event.target as HTMLElement;
+    target.classList.remove('card-hover');
+  }
 }
