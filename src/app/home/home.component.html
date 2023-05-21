@@ -4,12 +4,17 @@
 </h1>
 
 <div class="page-content">
-  <ng-container *ngIf="playlistItems | async as playlistItems">
-    <app-listing [playlistItems]="playlistItems"></app-listing>
-  </ng-container>
+  <mat-tab-group>
+    <mat-tab label="filmiki">
+      <ng-container *ngIf="playlistItems | async as playlistItems">
+        <app-listing [playlistItems]="playlistItems"></app-listing>
+      </ng-container>
+    </mat-tab>
 
-  Druga playlista
-  <ng-container *ngIf="playlistItems2 | async as playlistItems">
-    <app-listing [playlistItems]="playlistItems"></app-listing>
-  </ng-container>
+    <mat-tab label="filmiki ale inne">
+      <ng-container *ngIf="playlistItems2 | async as playlistItems">
+        <app-listing [playlistItems]="playlistItems"></app-listing>
+      </ng-container>
+    </mat-tab>
+  </mat-tab-group>
 </div>

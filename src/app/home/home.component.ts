@@ -4,7 +4,6 @@ import { Observable, map } from 'rxjs';
 import { API_KEY } from '../API_KEY.const';
 import { PlaylistItemInterface } from '../interfaces/playlist-item.interface';
 import { PlaylistItemListResponseInterface } from '../interfaces/playlist-item-list-response.interface';
-
 @Component({
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],

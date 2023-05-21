@@ -2,3 +2,22 @@
   width: 100%;
   height: 100vh;
 }
+
+.arrow-back {
+  position: fixed;
+  z-index: 10;
+  top: 30px;
+  left: 30px;
+
+  color: rgb(121, 121, 121);
+  &:visited {
+    color: rgb(121, 121, 121);
+  }
+
+  &-icon {
+    $icon-size: 90px;
+    width: $icon-size;
+    height: $icon-size;
+    font-size: $icon-size;
+  }
+}

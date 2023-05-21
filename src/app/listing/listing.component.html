@@ -1,13 +1,11 @@
 <div class="wrapper">
   <ng-container *ngFor="let item of playlistItems">
-    <!-- ZADANIE: usun cien, gdy zabierzemy kursor z kafelka -->
-
     <mat-card
       (mouseenter)="addShadow($event)"
       (mouseleave)="removeShadow($event)"
       class="listing-element"
     >
-      <img [src]="item.snippet.thumbnails.high.url" />
+      <img [src]="item.snippet.thumbnails.high?.url || ''" />
 
       <div class="movie-details">
         <mat-card-title>{{ item.snippet.title }}</mat-card-title>
@@ -22,6 +20,15 @@
         >
           <mat-icon class="play-icon">play_circle_filled</mat-icon>
         </a>
+
+        <mat-card-footer>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>Description</mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>{{ item.snippet.description }}</p>
+          </mat-expansion-panel>
+        </mat-card-footer>
       </div>
     </mat-card>
   </ng-container>

@@ -16,7 +16,7 @@ export interface PlaylistItemInterface {
         url: string;
         width: number;
         height: number;
-      };
+      } | null;
       medium: {
         url: string;
         width: number;

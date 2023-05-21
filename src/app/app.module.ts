@@ -13,6 +13,9 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import { MatChipsModule } from '@angular/material/chips';
     MatCardModule,
     MatIconModule,
     MatChipsModule,
+    MatExpansionModule,
+    MatTabsModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
