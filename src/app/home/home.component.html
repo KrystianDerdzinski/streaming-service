@@ -7,4 +7,9 @@
   <ng-container *ngIf="playlistItems | async as playlistItems">
     <app-listing [playlistItems]="playlistItems"></app-listing>
   </ng-container>
+
+  Druga playlista
+  <ng-container *ngIf="playlistItems2 | async as playlistItems">
+    <app-listing [playlistItems]="playlistItems"></app-listing>
+  </ng-container>
 </div>

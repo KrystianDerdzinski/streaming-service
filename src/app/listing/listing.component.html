@@ -5,6 +5,10 @@
 
       <mat-card-title>{{ item.snippet.title }}</mat-card-title>
 
+      <mat-chip-set>
+        <mat-chip>{{ item.snippet.publishedAt | date }}</mat-chip>
+      </mat-chip-set>
+
       <a
         class="play-link"
         [href]="'video?id=' + item.snippet.resourceId.videoId"
