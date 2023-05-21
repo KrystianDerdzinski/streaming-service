@@ -2,3 +2,24 @@
   max-width: 1200px;
   margin: auto;
 }
+
+.header-icon {
+  $icon-size: 38px;
+
+  font-size: $icon-size;
+  width: $icon-size;
+  height: $icon-size;
+}
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: #fff;
+  margin-top: 0;
+}

@@ -1,6 +1,9 @@
-<div class="page-content">
-  <h1>Home</h1>
+<h1 class="page-header mat-elevation-z6">
+  <span>CatTube</span>
+  <mat-icon class="header-icon">theaters</mat-icon>
+</h1>
 
+<div class="page-content">
   <ng-container *ngIf="playlistItems | async as playlistItems">
     <app-listing [playlistItems]="playlistItems"></app-listing>
   </ng-container>
