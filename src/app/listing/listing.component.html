@@ -1,10 +1,16 @@
 <div class="wrapper">
   <ng-container *ngFor="let item of playlistItems">
-    <div class="listing-element">
+    <mat-card class="listing-element">
       <img [src]="item.snippet.thumbnails.high.url" />
-    </div>
-    <a [href]="'video?id=' + item.snippet.resourceId.videoId">{{
-      item.snippet.title
-    }}</a>
+
+      <mat-card-title>{{ item.snippet.title }}</mat-card-title>
+
+      <a
+        class="play-link"
+        [href]="'video?id=' + item.snippet.resourceId.videoId"
+      >
+        <mat-icon class="play-icon">play_circle_filled</mat-icon>
+      </a>
+    </mat-card>
   </ng-container>
 </div>

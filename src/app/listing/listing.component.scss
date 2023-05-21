@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
-  gap: 8px;
+  gap: 16px;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -12,4 +13,17 @@
     width: 100%;
     height: auto;
   }
+}
+
+.play-link {
+  color: #000;
+  &:visited {
+    color: #686868;
+  }
+}
+
+.play-icon {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
 }
