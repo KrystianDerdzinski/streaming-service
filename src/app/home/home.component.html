@@ -5,16 +5,12 @@
 
 <div class="page-content">
   <mat-tab-group>
-    <mat-tab label="filmiki">
-      <ng-container *ngIf="playlistItems | async as playlistItems">
-        <app-listing [playlistItems]="playlistItems"></app-listing>
+    <ng-container *ngFor="let playlist$ of playlistsData; index as idx">
+      <ng-container *ngIf="playlist$ | async as playlist">
+        <mat-tab [label]="(playlistNames[idx] | async) || 'playlist'">
+          <app-listing [playlistItems]="playlist.items"></app-listing>
+        </mat-tab>
       </ng-container>
-    </mat-tab>
-
-    <mat-tab label="filmiki ale inne">
-      <ng-container *ngIf="playlistItems2 | async as playlistItems">
-        <app-listing [playlistItems]="playlistItems"></app-listing>
-      </ng-container>
-    </mat-tab>
+    </ng-container>
   </mat-tab-group>
 </div>
