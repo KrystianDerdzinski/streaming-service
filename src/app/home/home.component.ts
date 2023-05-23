@@ -1,7 +1,7 @@
 import { PLAYLIST_IDS } from './../PLAYLIST_IDS.const';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Observable, map, tap } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { API_KEY } from '../API_KEY.const';
 import { PlaylistItemListResponseInterface } from '../interfaces/playlist-item-list-response.interface';
 import { PlaylistInterface } from '../interfaces/playlist.interface';
