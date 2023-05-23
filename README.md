@@ -8,7 +8,7 @@ This is a project livecoded with university students. The goal of the project wa
   * styles `encapsulation`
   * `ngIf` & `ngFor` directives
   * what is & how to use `dependency injection`
-  * listening for `mouse events`
+  * listening for `mouse events` (click, mouseenter, mouseleave)
 * modules
   * what is `module` in Angular
   * how to use `import` 
